@@ -2,6 +2,9 @@ package com.example.nowfear.ui;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -13,6 +16,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+//    Button b = (Button) findViewById(R.id.button2);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+//        b.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                EditText txtStart = findViewById(R.id.startLoc_Text);
+//                EditText txtEnd = findViewById(R.id.endLoc_Text);
+//            }
+//        });
+
+
+
     }
 
 
